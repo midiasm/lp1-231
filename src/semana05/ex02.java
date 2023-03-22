@@ -35,30 +35,34 @@ public class ex02 {
     System.out.println("O seu IMC é:" + IMC);
 
         if (IMC<18.5) {
-            System.out.println("Voce esta abaixo do peso ideal");
+            System.out.println("Voce está abaixo do peso ideal");
         }
 
-        if (IMC>= 1805 && IMC<=24,9) {
-            System.out.println("Voce esta no peso ideal");
+        if (IMC>= 1805 && IMC<=24.9) {
+            System.out.println("Voce está no peso ideal");
         }
 
-        if (IMC>24.9) {
-            System.out.println("Voce esta acima do peso ideal");
+        if (IMC>=25.0 && IMC<=29.9) {
+            System.out.println("Voce está com excesso de peso");
         }
 
-        if (IMC>= 2409 && <=29,9) {
-            System.out.println("Voce esta classificado como Obesidade de Classe 1");
+        if (IMC>=30.0 && IMC<=34.9) {
+            System.out.println("Voce está classificado como Obesidade de Classe 1");
         }
 
-        if (IMC<30.0) {
-            System.out.println("Voce esta abaixo do peso ideal");
+        if (IMC>=35.0 && IMC<=39.9) {
+            System.out.println("Voce está classificado como Obesidade de Classe 2");
+        }
+
+        if (IMC>=40.0) {
+            System.out.println("Voce está classificado como Obesidade de Classe 3");
         }
 
 
     double pesoIdeal = 24.9 * (altura*altura);
     double pesoPerder = peso - pesoIdeal;
 
-    System.out.println("Voce precisa perder, em kg:") + pesoPerder;
+    System.out.println("Voce precisa perder, em kg:" + pesoPerder);
 
     }
 }
