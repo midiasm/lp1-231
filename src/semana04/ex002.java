@@ -19,6 +19,8 @@ public class ex002{
         
         System.out.println("A média aritmética dos tres números é:" + mediaAritm);
 
+        sc.close();
+
     }
 
 

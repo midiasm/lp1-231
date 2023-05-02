@@ -65,7 +65,6 @@ public class Introducao {
         System.out.println(nomeInformado + " " + idadeInformada);
         System.out.println("%s %d \n", nomeInformado, idadeInformada);
 
-
         sc.close();
     }
 }

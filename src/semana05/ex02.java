@@ -64,5 +64,7 @@ public class ex02 {
 
     System.out.println("Voce precisa perder, em kg:" + pesoPerder);
 
+    sc.close();
+
     }
 }

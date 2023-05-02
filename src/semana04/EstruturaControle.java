@@ -49,12 +49,12 @@ public class EstruturaControle {
 
         contador = 0;
         do {
-            System.out.println(Ligado);
+            System.out.println("Ligado");
             contador++;
-        } while (Ligado < 3);
+        } while ("Ligado" < 3);
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("ligado fori");
+            System.out.println("ligado for");
         }
 
         // arrays 

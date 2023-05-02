@@ -20,6 +20,8 @@ public class ex001{
         System.out.println("O número sucessor é:" + sucessor);
         System.out.println("O número antecessor é:" + antecessor);
 
+        sc.close();
+
     }
 
 }
