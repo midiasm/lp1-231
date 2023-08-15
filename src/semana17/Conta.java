@@ -1,29 +1,34 @@
 package semana17;
 
 public class Conta {
-    private int numero;
-    private LocalDate dataAbertura;
     protected double saldo;
     protected double tarifa;
 
-    public Conta(int numero, LocalDate dataAbertura){
-        this.numero = numero;
-        this.dataAbertura = dataAbertura;
-        saldo = 1000;
-        tarifa = 10;
+    public Conta(double tarifa){
+        if (tarifa<0) {
+            throw new RuntimeException("somente valores positivos");
+        }
+        this.tarifa=tarifa;
+        saldo=0;
     }
 
-    public void sacar(double valor){
-        saldo -= valor;
+    public void sacar(double valordosaque) {
+        saldo=saldo-valordosaque;
     }
 
-    public void depositar(double valor){
-        saldo += valor;
+    public void depositar(double valordodeposito) {
+        saldo=saldo+valordodeposito;
     }
 
-    public void calcularTarifa(double){
+    public double calcularTarifa(){
+        return (saldo*tarifa)/1000;
+    }
+
+    public double getSaldo(){
+        return saldo;
+    }
+
+    public double getTarifa(){
         return tarifa;
     }
 }
-
-
